@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Game Admin panel</title>
+		<meta charset="UTF-8"/>
+		<link href="/build/css/style.css" rel="stylesheet">
+		<script src="/build/js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/">Все игры</a></li>
+					<li class="navActive"><a href="/edit">Модерация</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="root">
+			<div class="logs"></div>
+
+			<div class="game_head">
+				<div class="gh_add">Добавить</div>
+				<div class="gh_find">
+					<input type="text" placeholder="Поиск по названию"/>
+				</div>
+			</div>
+
+			<div class="game_table">
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc">Описание</div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+				<div class="gt_item">
+					<div class="gti_cell gti_title">Название</div>
+					<div class="gti_cell gti_price">Цена</div>
+					<div class="gti_cell gti_price">Платформы</div>
+					<div class="gti_cell gti_desc"><a href="#">Открыть</a></div>
+					<div class="gti_cell gti_edit"></div>
+					<div class="gti_cell gti_del"></div>
+				</div>
+			</div>
+
+			<div class="modalEdit">
+				<div class="modalExit"></div>
+				<h3>Добавить новую игру</h3>
+				<form onsubmit="return false;">
+					<input type="text" name="title" placeholder="Название"/>
+					<input type="text" name="price" onkeypress="if(isNaN(String.fromCharCode(event.keyCode))) return false;" placeholder="Цена"/>
+					<div class="pl_case">
+						<div class="mefp_title">Платформы:</div>
+						<label><input name="platform[]" class="pl_platform" type="checkbox" value="MacOs">MacOs</label>
+						<label><input name="platform[]" class="pl_platform" type="checkbox" value="Windows">Windows</label>
+						<label><input name="platform[]" class="pl_platform" type="checkbox" value="SteamOS">SteamOS</label>
+					</div>
+					<input type="submit" value="Добавить" onclick="validForm(this.form)">
+				</form>
+			</div>
+
+
+
+			<div class="modalBg"></div>
+		</main>
+		<footer>© 2019</footer>
+	</body>
+</html>

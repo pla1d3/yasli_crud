@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){function n(n){var e=document.createElement("script");e.src=n,e.async=!0,document.head.appendChild(e)}"/"==window.location.pathname?n("/build/js/all.js"):n("/build/js/"+window.location.pathname.replace(/\//gi,"")+".js")});
